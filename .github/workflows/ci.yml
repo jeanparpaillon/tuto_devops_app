@@ -5,7 +5,7 @@ on:
 
 jobs:
     test:
-        runs-on: tuto
+        runs-on: self-hosted
 
         steps:
             - uses: actions/checkout@v4
