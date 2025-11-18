@@ -8,11 +8,8 @@ app.get('/', (req, res) => {
   res.send(`Hello World, it is ${currentDateTime}`);
 });
 
-// Only start the server if this file is run directly
-if (import.meta.url === `file://${process.argv[1]}`) {
-  app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-  });
-}
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
 
 export default app;
